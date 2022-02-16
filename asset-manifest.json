@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rys_podkarpacki/static/css/main.637588ef.css",
-    "main.js": "/rys_podkarpacki/static/js/main.4974d715.js",
+    "main.js": "/rys_podkarpacki/static/js/main.f631a152.js",
     "static/media/slider2.jpg": "/rys_podkarpacki/static/media/slider2.f6c3f391ccec2a6cc1b2.jpg",
     "static/media/slider3.jpg": "/rys_podkarpacki/static/media/slider3.5e81e005465528bfd66a.jpg",
     "static/media/deren1.png": "/rys_podkarpacki/static/media/deren1.3d0414e3021b2a55139c.png",
@@ -13,10 +13,10 @@
     "static/media/deren_misa.jpg": "/rys_podkarpacki/static/media/deren_misa.3bbf3e167731558ab21d.jpg",
     "index.html": "/rys_podkarpacki/index.html",
     "main.637588ef.css.map": "/rys_podkarpacki/static/css/main.637588ef.css.map",
-    "main.4974d715.js.map": "/rys_podkarpacki/static/js/main.4974d715.js.map"
+    "main.f631a152.js.map": "/rys_podkarpacki/static/js/main.f631a152.js.map"
   },
   "entrypoints": [
     "static/css/main.637588ef.css",
-    "static/js/main.4974d715.js"
+    "static/js/main.f631a152.js"
   ]
 }
