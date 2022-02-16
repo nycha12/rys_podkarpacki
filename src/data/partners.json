@@ -1,0 +1,67 @@
+[
+	{
+		"name": "Dukla Pałac",
+		"img": "/img/partners/bl.jpg",
+		"link": "https://www.instagram.com/duklapalace/"
+	},
+	{
+		"name": "Aboretum",
+		"img": "/img/partners/arbor.jpg",
+		"link": "https://bolestraszyce.com.pl/"
+	},
+	{
+		"name": "Browar Laskowiak",
+		"img": "/img/partners/browar.jpg",
+		"link": "https://www.facebook.com/BrowarLasowiak/"
+	},
+	{
+		"name": "Marcin Giżycki",
+		"img": "/img/partners/favicon.png",
+		"link": "https://www.marcingizycki.com/"
+	},
+	{
+		"name": "Gdy żyje się zdrowo",
+		"img": "/img/partners/gzsz.jpg",
+		"link": "https://www.facebook.com/gdyzyjesiezdrowo"
+	},
+	{
+		"name": "Jadę i jem",
+		"img": "/img/partners/jij.png",
+		"link": "https://www.facebook.com/Jadeijem/"
+	},
+	{
+		"name": "Lwowski Baciar",
+		"img": "/img/partners/lb.png",
+		"link": "https://www.lwowskibaciar.pl/"
+	},
+	{
+		"name": "Old Town Studio",
+		"img": "/img/partners/oldtown.jpg",
+		"link": "https://www.facebook.com/Oldtownprzemysl"
+	},
+	{
+		"name": "Szlak kulinarny podkarpackie smaki",
+		"img": "/img/partners/podk_smaki.jpg",
+		"link": "https://www.facebook.com/podkarpackie.smaki/"
+	},
+	{
+		"name": "Przewodnik Przemyśl",
+		"img": "/img/partners/prze_zd.jpg",
+		"link": "https://www.facebook.com/przewodnik.przemysl"
+	},
+	{
+		"name": "Naturalne kozie sery",
+		"img": "/img/partners/swob.jpg",
+		"link": "https://www.facebook.com/Swoboda-220746835185681"
+	},
+	{
+		"name": "Wow land",
+		"img": "/img/partners/wow_land.jpg",
+		"link": "https://www.facebook.com/Wowlandpl-102593701496961/"
+	},
+	{
+		"name": "Złoto Karpat",
+		"img": "/img/partners/zk.png",
+		"link": "https://www.instagram.com/pasiekazlotokarpat/"
+	}
+]

@@ -1,0 +1,97 @@
+.startpage
+    height: 100vh
+    width: 100%
+    position: relative
+    background-image: url("../img/slider2.jpg")
+    background-size: auto
+    background-position-y: 30%
+    background-repeat: no-repeat
+    animation: backgroundSize 8s linear both
+    .logo
+        border-radius: 50%
+        opacity:60%
+        width:200px
+    h1
+        position: absolute
+        top:30%
+        left:10%
+        font-family: 'Gabriela', serif
+        text-transform: uppercase
+        color: white
+        font-size: 7em
+    .gallery
+        position: absolute
+        right:80px
+        top: 50px
+        width: 27%
+        max-height: 480px
+        overflow: hidden
+        border-radius: 20px
+        img
+            width: 100%
+            animation: galleryAnimation 6s linear infinite
+           
+    h2
+        position: absolute
+        bottom:10%
+        right:10px
+        font-family: 'Gabriela', serif
+        text-transform: uppercase
+        color: white
+        font-size: 7em
+        cursor: pointer
+
+@media (max-width: 1250px) 
+    .startpage
+        background-image: url("../img/slider3.jpg")
+        
+        
+        h1
+            font-size: 5em
+            top:35%
+            left:10%
+            text-align: center
+        h2
+            font-size: 5em
+            bottom:15%
+        
+
+
+@media (max-width: 750px) 
+    .startpage
+        background-image: url("../img/slider4.jpg")
+        .gallery
+            display: none
+        h1
+            font-size: 4em
+            top:35%
+            left:10%
+        h2
+            font-size: 3.5em
+            bottom:15%      
+
+
+@keyframes backgroundSize
+    0% 
+        background-size: 110%
+   
+    100%
+        background-size: 115%
+        
+@keyframes galleryAnimation
+    0%
+        opacity: 0
+    3%
+        opacity: 0
+    
+    25%
+        opacity: 1
+
+    75%
+        opacity: 1
+    97%
+        opacity: 0
+        
+    100%
+        opacity: 0
+        
