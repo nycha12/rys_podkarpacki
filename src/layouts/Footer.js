@@ -17,7 +17,7 @@ const Footer = () => {
 			<h2>Partnerzy</h2>
 			<div className="partners">{partners}</div>
 			<hr />
-			<p>copywright</p>
+			<p> &#169; Ryś Podkarpacki</p>
 		</div>
 	);
 };

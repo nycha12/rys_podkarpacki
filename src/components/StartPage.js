@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import gallery from "../data/gallery.json";
 import logo from "../img/logo.png";
 
 const StartPage = (props) => {
@@ -13,13 +13,12 @@ const StartPage = (props) => {
 		const timer = setInterval(changeImage, 6000);
 		return () => clearInterval(timer); //wyczyszczenie interwału
 	}, []);
-
 	return (
 		<div className="startpage">
 			<div>
 				<img src={logo} alt="Logo" className="logo" />
 				<div className="gallery">
-					<img src={`/img/gallery/gallery${image}.jpg`} alt="Galeria" />
+					<img src={gallery[image].img} alt="Galeria" />
 				</div>
 				<h1>Świat Derenia</h1>
 				<h2 onClick={props.handleEnter}>Wchodzę !!!</h2>

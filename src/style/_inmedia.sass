@@ -1,0 +1,47 @@
+.inmedia
+    min-height: 120vh
+    overflow: hidden
+    position: relative
+    video
+        position: relative
+        min-width:100%
+        z-index:-1
+        opacity: 0.5
+    .wrap
+        position: absolute
+        left:0
+        top:0
+        display: flex
+        justify-content: space-around
+        .article
+            flex-basis: 29%
+            min-width: 300px
+            margin-top:20px
+            border: 1px solid grey
+            border-radius: 10px
+            background-color: rgba(255,255 ,255 ,60% )
+        p
+            padding: 30px
+            font-size: 1.2em
+            text-align: justify
+            color: #888
+            opacity: 1
+    iframe
+        display: block
+        margin: 0 auto
+        width:80%
+        min-height: 15vw
+        padding: 10px
+
+@media (max-width:1000px)
+    .inmedia
+        video
+            display: none
+        .wrap
+            position: initial
+            display: block
+            .article
+                margin:10px
+                padding: 10px
+        iframe
+            min-height: 35vh

@@ -1,16 +1,25 @@
 .footer
     height: 20vh
     color: #888
+    background-color: white
     h2
         text-align: center
         padding: 20px
     .partners
         display: flex
         justify-content: space-around
-        .partner img
-            &:hover
-                position: relative
-                width:120px
+
     p
         text-align: center
         padding: 20px
+        font-size:1.5em
+        hr
+            width: 80%
+@media (max-width: 1050px) 
+    .footer
+        .partners
+            flex-wrap: wrap
+            justify-content: space-around
+            .partner
+                padding: 10px
+            

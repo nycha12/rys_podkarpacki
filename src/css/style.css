@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap&subset=latin,latin-ext");
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +83,7 @@
   }
   .startpage h2 {
     font-size: 3.5em;
-    bottom: 15%;
+    bottom: 20%;
   }
 }
 @-webkit-keyframes backgroundSize {
@@ -145,7 +145,6 @@
 body {
   height: 100vh;
   width: 100%;
-  position: relative;
   background-size: 115%;
   background-position-y: 30%;
   background-repeat: no-repeat;
@@ -160,6 +159,7 @@ body {
   background-color: white;
   padding: 5px;
   border-radius: 5px;
+  z-index: 99;
 }
 .social a {
   display: block;
@@ -183,14 +183,14 @@ body {
   justify-content: center;
 }
 .products section .product {
-  margin: 60px;
-  padding: 30px;
+  margin: 2%;
+  padding: 1%;
   border: 1px solid grey;
   border-radius: 10px;
 }
 .products section img {
   display: block;
-  width: 400px;
+  max-width: 90%;
   margin: 0 auto;
 }
 .products section p {
@@ -209,6 +209,11 @@ body {
   color: #888;
 }
 
+@media (max-width: 900px) {
+  .products section {
+    flex-wrap: wrap;
+  }
+}
 .home {
   opacity: 0;
   transition: 1s;
@@ -247,8 +252,13 @@ body {
   right: 30px;
 }
 
+@media (max-width: 700px) {
+  .home {
+    overflow: hidden;
+  }
+}
 .navigation {
-  background-color: #89ddaf;
+  background-color: #c03333;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -265,17 +275,53 @@ body {
   font-size: 2em;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 10px #89ddaf solid;
+  border-bottom: 10px #c03333 solid;
   transition: 0.3s;
 }
 .navigation div a:hover {
-  color: #069921;
+  color: #610c0c;
 }
 .navigation div a.active {
-  border-bottom: 10px #069921 solid;
-  color: #069921;
+  border-bottom: 10px #610c0c solid;
+  color: #610c0c;
+}
+.navigation .bars {
+  display: none;
 }
 
+@media (max-width: 1350px) {
+  .navigation {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  .navigation div {
+    display: block;
+    position: absolute;
+    width: 0;
+    transition: 0.5s;
+    background-color: #c03333;
+    z-index: -2;
+    overflow: hidden;
+  }
+  .navigation div a {
+    display: block;
+    text-align: center;
+  }
+  .navigation div a:hover {
+    color: #c03333;
+  }
+  .navigation .bars {
+    display: block;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+  }
+  .navigation div.active {
+    opacity: 1;
+    width: 100%;
+  }
+}
 .header {
   width: 90vw;
   height: 40vh;
@@ -303,6 +349,7 @@ body {
 .footer {
   height: 20vh;
   color: #888;
+  background-color: white;
 }
 .footer h2 {
   text-align: center;
@@ -312,11 +359,102 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.footer .partners .partner img:hover {
-  position: relative;
-  width: 120px;
-}
 .footer p {
   text-align: center;
   padding: 20px;
+  font-size: 1.5em;
+}
+.footer p hr {
+  width: 80%;
+}
+
+@media (max-width: 1050px) {
+  .footer .partners {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer .partners .partner {
+    padding: 10px;
+  }
+}
+.oldtownstudio p {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 70%;
+  font-size: 1.2em;
+  text-align: justify;
+  color: #888;
+}
+.oldtownstudio .maps {
+  display: flex;
+  justify-content: center;
+}
+.oldtownstudio .maps iframe {
+  display: block;
+  width: 60%;
+  height: 40vw;
+  border: 0;
+}
+
+@media (max-width: 1000px) {
+  .oldtownstudio .maps iframe {
+    height: 60vh;
+  }
+}
+.inmedia {
+  min-height: 120vh;
+  overflow: hidden;
+  position: relative;
+}
+.inmedia video {
+  position: relative;
+  min-width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.inmedia .wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.inmedia .wrap .article {
+  flex-basis: 29%;
+  min-width: 300px;
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.inmedia .wrap p {
+  padding: 30px;
+  font-size: 1.2em;
+  text-align: justify;
+  color: #888;
+  opacity: 1;
+}
+.inmedia iframe {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  min-height: 15vw;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .inmedia video {
+    display: none;
+  }
+  .inmedia .wrap {
+    position: initial;
+    display: block;
+  }
+  .inmedia .wrap .article {
+    margin: 10px;
+    padding: 10px;
+  }
+  .inmedia iframe {
+    min-height: 35vh;
+  }
 }/*# sourceMappingURL=style.css.map */

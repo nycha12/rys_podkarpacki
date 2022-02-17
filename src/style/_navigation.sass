@@ -1,23 +1,12 @@
 .navigation
-    background-color: #89ddaf
-    // background-color: white
+    background-color: $backgroudMenu
     height: 120px
     display: flex
     justify-content: center
-    // img
-    //     margin-left:30px
-    //     width: 100px
-    //     height: 100px
-    // h1
-    //     color: white
-    //     padding: 10px
     div
         display: flex
         justify-content: space-around
-        margin-right:80px
-        // &:nth-child(1)
-        //     align-items: center
-            
+        margin-right:80px   
         a
             display: block
             
@@ -26,14 +15,47 @@
             font-size: 2em
             text-transform: uppercase
             text-decoration: none
-            border-bottom: 10px #89ddaf solid
+            border-bottom: 10px $backgroudMenu solid
             transition: 0.3s
             &:hover
-                color:#069921
-
+                color:$activeMEnu
         a.active
-            border-bottom: 10px #069921 solid
-            color:#069921
-           
+            border-bottom: 10px $activeMEnu solid
+            color:$activeMEnu
+    .bars
+        display: none     
 
     
+@media (max-width:1350px) 
+    .navigation
+        display: block
+        position: relative
+        z-index: 2
+        div
+            display: block
+            position: absolute
+            width:0
+
+            transition: 0.5s
+            background-color: $backgroudMenu
+            z-index: -2
+            overflow: hidden
+            a
+                display: block
+                text-align: center
+                &:hover
+                    color:$backgroudMenu
+        .bars
+            display: block
+            padding: 30px
+            font-size: 40px
+            color: white
+        div.active
+            opacity: 1
+
+            width: 100%
+
+            
+            
+
+              

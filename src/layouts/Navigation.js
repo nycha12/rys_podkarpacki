@@ -1,16 +1,42 @@
 import { NavLink } from "react-router-dom";
-import logo from "../img/logo2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 const Navigation = () => {
+	const [showMenu, setShowMenu] = useState("");
+	const handleShowMenu = () => {
+		if (showMenu === "active") {
+			setShowMenu("");
+		} else {
+			setShowMenu("active");
+		}
+	};
+	const handleHideMenu = () => {
+		setShowMenu("");
+	};
 	return (
 		<div className="navigation">
-			{/* <div>
-				<img src={logo} alt="" />
-				<h1>Ryś podkarpacki</h1>
-			</div> */}
-			<div>
-				<NavLink to="/">Home</NavLink>
-				<NavLink to="products">Produkty</NavLink>
-				<NavLink to="aboutDeren">O dereniu</NavLink>
+			<FontAwesomeIcon
+				onClick={handleShowMenu}
+				icon={faBars}
+				className="bars"
+			/>
+			<div className={showMenu}>
+				<NavLink onClick={handleHideMenu} to="/rys_podkarpacki">
+					Home
+				</NavLink>
+				<NavLink onClick={handleHideMenu} to="products">
+					Produkty
+				</NavLink>
+				<NavLink onClick={handleHideMenu} to="aboutDeren">
+					O dereniu
+				</NavLink>
+				<NavLink onClick={handleHideMenu} to="oldtownstudio">
+					Old Town Studio
+				</NavLink>
+				<NavLink onClick={handleHideMenu} to="inmedia">
+					W mediach
+				</NavLink>
 			</div>
 		</div>
 	);

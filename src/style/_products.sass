@@ -5,13 +5,13 @@
         display: flex
         justify-content: center
         .product
-            margin: 60px
-            padding: 30px
+            margin: 2%
+            padding: 1%
             border: 1px solid grey
             border-radius: 10px
         img
             display: block
-            width: 400px
+            max-width: 90%
             margin: 0 auto
         p
             padding: 30px
@@ -26,3 +26,8 @@
         font-size: 1.2em
         text-align: justify
         color: #888
+
+@media (max-width:900px)
+    .products
+        section
+            flex-wrap: wrap
