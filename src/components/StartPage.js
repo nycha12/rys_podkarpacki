@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import gallery from "../data/gallery.json";
 import logo from "../img/logo.png";
 
@@ -21,7 +22,9 @@ const StartPage = (props) => {
 					<img src={gallery[image].img} alt="Galeria" />
 				</div>
 				<h1>Świat Derenia</h1>
-				<h2 onClick={props.handleEnter}>Wchodzę !!!</h2>
+				<Link to="/rys_podkarpacki/home">
+					<h2 onClick={props.handleEnter}>Wchodzę !!!</h2>
+				</Link>
 			</div>
 		</div>
 	);

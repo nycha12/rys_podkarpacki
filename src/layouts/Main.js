@@ -8,7 +8,7 @@ const Main = () => {
 	return (
 		<div className="main">
 			<Routes>
-				<Route path="/rys_podkarpacki" element={<Home />} />
+				<Route path="/home" element={<Home />} />
 				<Route path="/products" element={<Products />} />
 				<Route path="/aboutderen" element={<AboutDeren />} />
 				<Route path="/oldtownstudio" element={<OldTownStudio />} />

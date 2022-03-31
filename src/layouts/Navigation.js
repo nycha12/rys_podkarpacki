@@ -22,7 +22,7 @@ const Navigation = () => {
 				className="bars"
 			/>
 			<div className={showMenu}>
-				<NavLink onClick={handleHideMenu} to="/rys_podkarpacki">
+				<NavLink onClick={handleHideMenu} to="home">
 					Home
 				</NavLink>
 				<NavLink onClick={handleHideMenu} to="products">
@@ -37,6 +37,14 @@ const Navigation = () => {
 				<NavLink onClick={handleHideMenu} to="inmedia">
 					W mediach
 				</NavLink>
+				<a
+					onClick={handleHideMenu}
+					target="_blank"
+					href="https://sklep.ryspodkarpacki.pl/"
+					rel="noreferrer"
+				>
+					Sklep
+				</a>
 			</div>
 		</div>
 	);
